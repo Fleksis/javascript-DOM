@@ -1,12 +1,12 @@
 window.addEventListener('load', function(){
-    const button = document.getElementById("toggle_button")
+    const poga = document.getElementById("toggle_button")
 
-    button.addEventListener('click', function(){
-        document.querySelectorAll('.second_five li').forEach((e) => {
-            if(e.style.display == 'block') {
-                e.style.display = 'none'
+    poga.addEventListener('click', function(){
+        document.querySelectorAll('.second_five li').forEach((element) => {
+            if(element.style.display == 'block') {
+                element.style.display = 'none'
             } else {
-                e.style.display = 'block';
+                element.style.display = 'block';
             }
         });
     });

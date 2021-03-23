@@ -1,13 +1,13 @@
 window.addEventListener("load", function(){
-    const button = document.getElementById('button')
+    const poga = document.getElementById('button')
 
-    button.addEventListener('click', function(e){
-        e.preventDefault()
-        document.querySelectorAll('.toggle_me').forEach(function(e) {
-            if(e.style.display == 'none'){
-                e.style.display = 'block'
+    poga.addEventListener('click', function(element){
+        element.preventDefault()
+        document.querySelectorAll('.toggle_me').forEach(function(element) {
+            if(element.style.display == 'none'){
+                element.style.display = 'block'
             } else {
-                e.style.display = 'none'
+                element.style.display = 'none'
             }
         })
     })
